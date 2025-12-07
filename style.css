@@ -1,0 +1,41 @@
+body {
+  background-image: url('wallpaper.png');
+  background-attachment: fixed;
+  background-size: cover;       /* make the bg cover the whole thing */
+  background-repeat: no-repeat; /* disables tiling */
+  background-position: center;
+  color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-style: normal;
+  }
+h1 {
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  font-size: 50px;
+}
+p {
+  color: rgb(255, 255, 255);
+  font-weight: 200;
+}
+a {
+  color: rgb(0, 153, 255)
+}
+.container {
+  display: flex;
+  /*align-items: center;*/
+  justify-content: center
+}
+img {
+  max-width: 50%;
+  max-height: 50%;
+  margin-right: 50px;
+}
+.slide-up {
+  animation: slideUp 0.7s ease-out forwards;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
